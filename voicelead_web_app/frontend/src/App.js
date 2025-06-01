@@ -7,7 +7,7 @@ function App() {
   const [feedback, setFeedback] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/daily?level=1')
+    axios.get('https://voicelead-backend.onrender.com/daily?level=1')
       .then(res => setExercise(res.data));
   }, []);
 
